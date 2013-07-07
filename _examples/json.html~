@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>AJAX Demo with jQuery</title>
+    <style style="text/css">
+       #currTime { font-family: courier; font-size: 12px; background: #CCC;};
+    </style>
+    <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+         $.get("http://127.0.0.1/~ptwickler/time.pl", 
+               "", function(d){
+                     if (d.time != null) 
+                     {
+                        $("#currTime").html(d.time);
+                     }
+                   });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>AJAX demo with jQuery</h1>
+    <p>The time on this page comes from a local JSON service written in Perl.</p>
+    <p>The current time is <span id="currTime"><span>.</p> 
+  </body>
+</html>

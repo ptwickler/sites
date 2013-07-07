@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Build your Meal</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+       <form method="GET" action="dinner.php"> <!--This runs the script upon submission of the form -->
+           Choose your entree:
+           <select name="entree">
+               <option value="">-- Select from one of our savory entrees --</option> <!--These option elements set the value of the select to the user's entree choice -->
+               <option value="Steak Nubs">Steak Nubs</option>
+               <option value="Salmon Frizzle">Salmon Frizzle</option>
+               <option value="Barbecue Pork">Barbecue Pork</option>
+               <option value="Chicken Roaster">Chicken Roaster</option>
+           </select>
+
+           <input type="submit" value="SUBMIT">
+       </form>
+    </body>
+</html>

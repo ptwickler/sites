@@ -1,0 +1,26 @@
+<!doctype html> <!--This is the html that holds the form from which the values get pullled into the array -->
+<html lang="en">
+<head>
+  <title>Daily Schedule</title>
+  <meta charset="utf-8">
+
+</head>
+<body>
+<div id="sched">
+
+</div>
+<br/>
+<br/>
+<br/>
+Click "Update" to see your schedule above. Change the values and then click "Update" again to see the changes.
+<form method="GET" action="lab06_obj01.php"> <!--This form holds and  GETs the values that get pulled into the $collection array above -->
+           <label for="9am">Hour</label>
+             <input  type="text" name="hour" value="">
+           <label for="activity">New Activity</label>
+             <input type="text" name="activity">
+
+            <input type="submit" value="update"></input>
+        </form>
+
+  </body>
+</html>
